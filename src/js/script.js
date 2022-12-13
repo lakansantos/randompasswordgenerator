@@ -170,6 +170,9 @@ generatePassword = (upper, lower, number, symbol, len, counts) =>{
         generatedPassword = 'Please select a length';
         passwordGenerated.style.color = 'red';
     }
+    else{
+        passwordGenerated.style.color = 'white';
+    }
 
     return generatedPassword
 
