@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding:  0;
+    box-sizing: border-box;
+}
+
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.passwordContainer{
+    background-color: rgba(255, 255, 255, .2);
+    width: 400px;
+    height: 50px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+#copypasteicon{
+    color: #9DECF9;
+    margin: 15px;
+    font-size: 20px;
+}
+
+
+#copypasteicon:hover{
+    cursor: pointer;
+}
+.container{
+    background-color: rgba(255, 255, 255, .2);
+    height: fit-content;
+    width: 400px;
+    border: none;
+}
+
+
+.passwordGenerated{
+    font-size: 1.3rem;
+    margin: 15px;
+    color: rgba(255, 255, 255, .5);
+
+}
+
+
+h1{
+    color: gray;
+    font-size: 1.8rem;
+    margin: 10px;
+
+}
+.lengthDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lengthText{
+    margin: 15px;
+    color: white;
+    font-size: 1rem;
+}
+
+.lengthNumber{
+    color: #9DECF9;
+    margin: 5px 15px;
+    font-size: 2rem;
+    
+}
+
+input[type=range]{
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    height: 5px;
+    width: 100%; /* Specific width is required for Firefox. */
+    background: #333; /* Otherwise white in Chrome */
+    color: white;
+}
+
+.inputSection{
+    margin: 15px;
+}
+label{
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+label::before{
+    content:'';
+    width: .7em;
+    height: .7em;
+    margin-right: .5em;
+    border: .15em solid white;
+}
+
+label:hover::before{
+    background:  #9DECF9;
+}
+input[type=checkbox]{
+    opacity: 0;
+    display: inline;
+    margin: 5px;
+    background-color: gray;
+    white-space: normal;
+}
+
+input[type=checkbox]:hover{
+    cursor: pointer;
+}
+
+input[type=checkbox]:focus + label:before{
+    box-shadow: 0 0 20px black;
+}
+
+input[type=checkbox]:checked + label:before{
+    background-color: #9DECF9;
+    content: '\002714';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+
+
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    border: none;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+ 
+}
+
+
+.strengthDiv{
+    padding: 10px;
+    width: 92%;
+    margin-left: 15px;
+    border: none;
+    height: 50px;
+    background: #333;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 25px;
+}
+
+.strengthText{
+    color: rgba(255, 255, 255, .6);
+    font-size: .8rem;
+}
+
+.barsDiv{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.level{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+.bar{
+    height: 20px;
+    width: 8px;
+    border: 2px solid white;
+}
+button{
+    padding: 10px;
+    width: 92%;
+    margin: 15px;
+    border: none;
+    height: 50px;
+    background: #9DECF9;
+}
+
+
+button:hover{
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: 1px solid #9DECF9;
+    color: #9DECF9;
+
+}
+
+
+

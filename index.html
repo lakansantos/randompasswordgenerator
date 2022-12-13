@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;800&family=Roboto&display=swap" rel="stylesheet">
+    <script src="src/js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Password Generator</h1>
+        <div class="passwordContainer">
+            <p class="passwordGenerated" id="passwordText">P4$5W0rD !</p>
+            <i class="bi bi-files" id="copypasteicon"></i>
+        </div>
+        <div class="container">
+            <div class="lengthDiv">
+                <p class="lengthText">Character Length</p>
+                <p class="lengthNumber">0</p>
+            </div>
+            <div class="inputSection">
+                
+                <input type="range" class="range"  max="20" min="0">
+                <div class="item">
+                    <input type="checkbox" value="uppercase" id="uppercase"> 
+                    <label for="uppercase">Include Uppercase Letters</label>
+
+                </div>
+
+                <div class="item">
+                    <input type="checkbox" id="lowercase" value="lowercase">
+                    <label for="lowercase">Include Lowercase Letters</label>
+                </div>
+
+                <div class="item">
+                    <input type="checkbox" id="numbers" value="numbers"> 
+                    <label for="numbers">Include Numbers</label>
+                </div>
+
+                <div class="item">
+                    <input type="checkbox" id="symbols" value="symbols"> 
+                    <label for="symbols">Include Symbols</label>
+                </div>
+
+            </div>
+            <div class="strengthDiv">
+                <p class="strengthText">STRENGTH</p>
+                <div class="barsDiv">
+                    <p class="level"><!--strength level of password --></p>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <button>GENERATE</button>
+        </div>
+    </div>
+</body>
+</html>
