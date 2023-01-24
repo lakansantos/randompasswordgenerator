@@ -1,4 +1,3 @@
 # randompasswordgenerator
 ## Random password generator using Vanilla JavaScript
-### The design is from frontmentor.io
-### I just changed it a little bit. 
+### This is a coding challenge from [frontentmentor.io](https://frontendmentor.io)
